@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+    />
+    <title>Blank App</title>
+    <link rel="stylesheet" href="css/onsenui.css" />
+    <link rel="stylesheet" href="css/onsen-css-components.min.css" />
+  </head>
+  <body>
+    <ons-page>
+      <ons-toolbar>
+        <div class="center">
+          Temperature Converter
+        </div>
+      </ons-toolbar>
+      <div style="text-align:center;">
+        <p>Enter temperature (C)</p>
+        <ons-input
+          type="number"
+          id="Celsius"
+          placeholder="Enter temperature"
+          float
+        ></ons-input>
+        <p></p>
+
+        <ons-button onclick="Convert()">Convert</ons-button>
+        <p></p>
+        <ons-button onclick="Clear()">Clear</ons-button>
+      </div>
+    </ons-page>
+    <script src="js/onsenui.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+  </body>
+</html>
